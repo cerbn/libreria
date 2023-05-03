@@ -1,0 +1,55 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+
+{% block contenido %}
+{% load crispy_forms_tags %}
+
+  <link rel="stylesheet" href="static/app/css/productos.css">
+
+
+  <section class="productos" id="productos">
+
+    <div class="container">
+      <div style="text-align: center;">
+          
+          <form action="" method="POST">
+              {% csrf_token %}
+              <table>
+              {{ form | crispy }}
+              </table>
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+             </form>
+  
+  
+            </form>
+                <div class="pie-form">
+                    <a href="{% url 'registrar' %}">¿No tienes Cuenta? Registrate</a>
+                </div>
+                 </div>
+                <div class="inferior">
+                <a href="{% url 'index' %}">Volver</a>
+                 </div>
+            </form>
+        
+      </div>
+  
+  
+  </div>
+  
+  </div>
+  </div>
+  </div> 
+  
+  
+    <script src="js/Loader.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $('body').addClass('loaded');
+      });
+    </script>
+  
+  </body>
+  
+  </section>
+{% endblock %}

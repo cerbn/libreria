@@ -1,0 +1,8 @@
+# pip install mysqlclient pymysql
+django == 4.0.1 
+pillow 
+django-admin-interface
+django-crispy-forms
+mysqlclient
+pymysql
+djangorestframework

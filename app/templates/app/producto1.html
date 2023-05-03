@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/pushbar.css">
+    <link href="css/producto1.css" rel="stylesheet" type="text/css">
+    <title>Ficcion - Libreria Imagina</title>
+    <link rel="shortcut icon" href="img/Libro3.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac7ad0e6e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    
+
+</head>
+
+<body>
+    <!-- Loading -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <!-- Navbar -->
+    <header class="TOP">
+        <a class="logo" href="index.html">
+            <img src="img/Libro3.png" alt="Logo" style="width:100%px; height: 40px;">
+        </a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fa fa-bars"></label>
+        <nav class="navbar">
+            <div>
+                <a href="login.html">Iniciar Sesión</a>
+                <a href="#info">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Contenedor productos -->
+
+    <div id="contenedor" class="contenedor">
+        <div>
+            <img src="img/Libro Jurassic.jpg" alt="producto 1">
+            <div class="informacion">
+                <p>Jurassic Park</p>
+                <p class="precio">$10.000</p>
+                <button data-pushbar-target="pushbar-carrito">comprar</button>
+
+            </div>
+        </div>
+        <div>
+            <img src="img/juego-de-tronos-cancion-de-hielo-y-fuego-1.jpg" alt="producto 2" style="height: 340px; padding: 3px;">
+            <div class="informacion">
+                <p>Game Of Thrones</p>
+                <p class="precio">$25.000</p>
+                <button data-pushbar-target="pushbar-carrito">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/Señor.jpg" alt="producto 3" style="margin-bottom: 10px; height: 320px;">
+            <div class="informacion">
+                <p>El Señor de los Anillos <br>La Comunidad del Anillo</p>
+                <p class="precio">$20.000</p>
+                <button data-pushbar-target="pushbar-carrito">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/cosa4.jpg" alt="producto 4">
+            <div class="informacion">
+                <p>Correa Gamer para mascotas</p>
+                <p class="precio">$499</p>
+                <button data-pushbar-target="pushbar-carrito">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/cosa5.jpg" alt="producto 5">
+            <div class="informacion">
+                <p>Juguete para morder</p>
+                <p class="precio">$599</p>
+                <button data-pushbar-target="pushbar-carrito">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/cosa6.jpg" alt="producto 6">
+            <div class="informacion">
+                <p>Comida para mascota</p>
+                <p class="precio">$699</p>
+                <button data-pushbar-target="pushbar-carrito">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/cosa7.jpg" alt="producto 7">
+            <div class="informacion">
+                <p>Auto para perros</p>
+                <p class="precio">$799<span>.99</span></p>
+                <button data-pushbar-target="pushbar-carrito">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/cosa8.jpg" alt="producto 8">
+            <div class="informacion">
+                <p>Disco para morder</p>
+                <p class="precio">$899</p>
+                <button data-pushbar-target="pushbar-carrito">Comprar</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/cosa1.jpg" alt="producto 9">
+            <div class="informacion">
+                <p>Transportador de mascotas</p>
+                <p class="precio">$999</p>
+                <button data-pushbar-target="pushbar-carrito">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pushbar" data-pushbar-id="pushbar-carrito" data-pushbar-direction="right">
+        <div class="btn_cerrar">
+            <button data-pushbar-close><i class="fa-regular fa-rectangle-xmark"></i></button>
+        </div>
+
+        <p class="titulo">Carrito de Compras</p>
+        <div class="item">
+            <img src="img/cosa1.jpg" alt="">
+            <div class="textos">
+                <p class="nombre_item">Jurassic Park</p>
+                <p>$10.000</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="img/cosa2.jpg" alt="" style="margin-right: 40px;">
+            <div class="textos">
+                <p class="nombre_item">Game Of Thrones</p>
+                <p>$35.000</p>
+            </div>
+        </div>
+        <div class="total">
+            <p class="precio-total">Total:</p>
+            <p>$45.000</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/pushbar.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+              blur:true,
+              overlay:true,
+            });
+      </script>
+
+
+    <script src="js/Loader.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+<!-- Footer -->
+<footer id="info" class="bg-info text-center text-white" >
+    <div class="container p-4">
+       
+        <!-- DESCRIPCION -->
+        <section class="mb-4" style="font-size: 150%;">
+            <p> Somos un grupo de amigos que comenzó a realizar la venta de productos para Libreria Imagina, todo esto para
+                ayudar a
+                la dicha empresa con mejoras en su sistema.</p>
+        </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 170%;">
+        © 2020 Copyright:
+        <a class="text-white" >Libreria Imagina</a>
+    </div>
+    
+
+</footer>
+</footer>
+
+</html>

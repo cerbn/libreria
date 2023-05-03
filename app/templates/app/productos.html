@@ -1,0 +1,70 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+
+{% block contenido %}
+
+  <link rel="stylesheet" href="static/app/css/productos.css">
+
+
+
+
+
+
+
+  
+  
+  <section class="productos" id="productos">
+    <h1 class="heading">Catalogo</h1>
+    {% for l in libro %}
+    <div class="caja-contenedor">
+
+      <div class="caja">
+
+
+        {% if l.imagen %}
+        <img src="{{ l.imagen.url }}" class="card-img-top imgp" alt="">
+        {% else %}
+        <img src="static/app/img/Libro Jurassic.jpg" alt="" style="height: 510px;">
+        {% endif %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        
+        <h3>{{l.nombre}}</h3>
+        <h3>{{l.nombre}}</h3>
+        <h3>{{l.nombre}}</h3>
+        <h3>{{l.nombre}}</h3>
+        <h3>{{l.nombre}}</h3>
+        <h3>{{l.nombre}}</h3>
+        <h3>{{l.nombre}}</h3>
+        <h3>{{l.nombre}}</h3>
+        <a href="{% url 'infoPublica' %}" class="btn">VER MÁS</a>
+      </div>
+    </div>
+    {% endfor %}  
+  </section> 
+
+
+  <script src="js/Loader.js"></script>
+  <script>
+    $(window).on("load", function () {
+      $('body').addClass('loaded');
+    });
+  </script>
+
+</body>
+
+</section> 
+{% endblock %}

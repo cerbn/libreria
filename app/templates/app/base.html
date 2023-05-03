@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+
+
+    <head>
+        <link rel="shortcut icon" href="img/Libro3.png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Libreria Imagina</title>
+        <link rel="stylesheet" href="static/app/css/index.css">
+        <script src="https://kit.fontawesome.com/ac7ad0e6e7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+
+
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    
+    <header class="TOP">
+        <a class="logo" href="{% url 'index' %}">
+            <img src="static/app/img/Libro3.png" alt="Logo" style="width:100%; height: 52px;">
+        </a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fa fa-bars"></label>
+        <nav class="navbar">
+            <div>
+                <a href="{% url 'login' %}">Iniciar Sesión</a>
+                <a href="{% url 'infoPublica' %}">Nosotros</a>
+                <a href="{% url 'productos' %}">Catalogo</a>
+                <a href="{% url 'contacto' %}">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+{% block contenido %}
+
+
+
+{% endblock %}
+
+
+
+</body>
+<!-- Footer -->
+<footer id="info" class="bg-info text-center text-white" >
+    <div class="container p-4">
+       
+        <!-- DESCRIPCION -->
+        <section class="mb-4" style="font-size: 150%;">
+            <p> Somos un grupo de amigos que comenzó a realizar la venta de productos para Libreria Imagina, todo esto para
+                ayudar a
+                la dicha empresa con mejoras en su sistema.</p>
+        </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 170%;">
+        © 2020 Copyright:
+        <a class="text-white" >Libreria Imagina</a>
+    </div>
+    
+
+</footer>
+
+</html>
