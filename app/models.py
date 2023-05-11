@@ -8,6 +8,7 @@
 from django.db import models
 
 
+
 class Bodega(models.Model):
     id_bodega = models.BigIntegerField(primary_key=True)
     direccion = models.CharField(max_length=100)

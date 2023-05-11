@@ -16,41 +16,30 @@
   
   <section class="productos" id="productos">
     <h1 class="heading">Catalogo</h1>
-    {% for l in libro %}
+    {% for l in wsdl %}
     <div class="caja-contenedor">
 
       <div class="caja">
+        <h1>{{l.Nombre}}</h1>
+        <h1>{{l.Autor}}</h1>
 
+        {% if l.ImagenUrl %}
+        <img src="{{ l.ImagenUrl }}" class="card-img-top imgp" alt="" style="max-width: 300px; max-height: 500px;">
+      {% else %}
+        <img src="static/app/img/Libro Jurassic.jpg" alt="" style="height: 500px;">
+      {% endif %}
+<br>
 
-        {% if l.imagen %}
-        <img src="{{ l.imagen.url }}" class="card-img-top imgp" alt="">
-        {% else %}
-        <img src="static/app/img/Libro Jurassic.jpg" alt="" style="height: 510px;">
-        {% endif %}
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<
 
         
-        <h3>{{l.nombre}}</h3>
-        <h3>{{l.nombre}}</h3>
-        <h3>{{l.nombre}}</h3>
-        <h3>{{l.nombre}}</h3>
-        <h3>{{l.nombre}}</h3>
-        <h3>{{l.nombre}}</h3>
-        <h3>{{l.nombre}}</h3>
-        <h3>{{l.nombre}}</h3>
-        <a href="{% url 'infoPublica' %}" class="btn">VER MÁS</a>
+
+        <h1>Precio:</h1>
+        <h3>{{l.Precio}}</h3>
+        <h1>Stock:</h1>
+        <h3>{{l.Stock}}</h3>
+     
+        <a href="{% url 'infoPublica' %}" class="btn">{{l.Nombre}}</a>
       </div>
     </div>
     {% endfor %}  
